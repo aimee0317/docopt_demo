@@ -13,6 +13,11 @@ Options:
 
 library(docopt)
 opt <- docopt(doc)
-print(opt)
-print(typeof(opt))
-print(opt[4])
+
+main <- function(var) {
+  print(var)
+  print(typeof(var))
+  print(var[4])
+}
+
+main(opt)
